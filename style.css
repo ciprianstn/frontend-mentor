@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    row-gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    background-color: rgb(151, 151, 151);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+a:active,
+a:visited,
+a:link,
+a:hover {
+    color: white;
+}
+
+li {
+    height: 200px;
+    width: 320px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+li:nth-child(1) {
+    background: url("3-column.jpg") no-repeat center center;
+}
+
+li:nth-child(2) {
+    background: url("profile-card.jpg") no-repeat center center;
+}
+
+li:nth-child(3) {
+    background: url("social.jpg") no-repeat center center;
+}
+
+li:nth-child(4) {
+    background: url("stats-preview.jpg") no-repeat center center;
+}
+
+@media only screen and (max-width: 750px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
